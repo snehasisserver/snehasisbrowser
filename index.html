@@ -21,7 +21,12 @@ background-color: #b7bfe7;
   75%  {background-color:green; left:0px; top:200px;}
   100% {background-color:red; left:0px; top:0px;}
 }
-
+#inside{
+     display:flex;
+            flex-direction: row;
+    justify-content:space-between;
+}
+        
         #name{
            font-family: Georgia;
            margin-bottom: 10px;
@@ -77,6 +82,40 @@ background-color: #b7bfe7;
             font-size: 20px;
             color: black;
         }
+        .ro{
+           animation-name: rota;
+           animation-iteration-count: infinite;
+           animation-duration: 4s;
+            width:125px;
+            height:100px;
+            color: white;
+            background-color:orange;
+            font-size:30px;
+            text-align:center;
+            margin:10px;
+        }
+       @keyframes rota{
+           0%{
+               transform:rotate(45deg);
+           }
+            
+           25%{
+               transform:rotate(130deg);
+           }
+            
+           50%{
+               transform:rotate(225deg);
+           }
+            
+           75%{
+               transform:rotate(270deg);
+           }
+            
+           100%{
+               transform:rotate(405deg);
+           }
+            
+        }
 
         
         
@@ -85,6 +124,9 @@ background-color: #b7bfe7;
 <body>
     <img src="picture.jpg" alt="The Logo" id="image">
     <h1 id="name">Snehasis</h1>
+    <br>
+    <div id="inside">
+    <div class = "ro">Welcome</div>
     <div id="main_div">
     <div class="sec">
       <div class="item">
@@ -114,9 +156,9 @@ background-color: #b7bfe7;
         <div><a href="https://www.wikipedia.org/" target="_blank"><p>Wikipedia</p></a></div>
       </div>
     </div>
-    <div id="sec3">
-
+    
     </div>
-    </div>
+    <div class="ro">Welcome</div>
+        </div>
 </body>
 </html>
